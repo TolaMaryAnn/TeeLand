@@ -1,45 +1,57 @@
 import { FaHeart, FaCheckCircle } from "react-icons/fa";
 
+import eagleImg from "../assets/golden-eagle-1884538_1280.jpg";
+import creatorBlackImg from "../assets/black_15675894.png";
+
+import liveArtImg from "../assets/ai-generated-8899561_1280.jpg";
+import workerImg from "../assets/worker.png";
+
+import redOceanImg from "../assets/mandelbrot-293453_1280.jpg";
+import peopleImg from "../assets/people_15996950.png";
+
+import lavaImg from "../assets/lava-9924745_1280.jpg";
+import taxInspectorImg from "../assets/tax-inspector.png";
+
 function NewItems() {
   const items = [
     {
       id: 1,
       title: "I Believe I Can Fly",
-      image: "src/assets/golden-eagle-1884538_1280.jpg",
+      image: eagleImg,
       eth: "0.08",
       edition: "1/20",
       likes: 50,
-      creatorImg: "src/assets/black_15675894.png",
+      creatorImg: creatorBlackImg,
       timeLeft: "00d 00h 00m 00s",
     },
     {
       id: 2,
       title: "Live Arts",
-      image: "src/assets/ai-generated-8899561_1280.jpg",
+      image: liveArtImg,
       eth: "3.99",
       edition: "/",
       likes: 286,
-      creatorImg: "src/assets/worker.png",
+      creatorImg: workerImg,
       timeLeft: null,
     },
     {
       id: 3,
       title: "Red Ocean",
-      image: "src/assets/mandelbrot-293453_1280.jpg",
+      image: redOceanImg,
       eth: "0.45",
       edition: "/",
       likes: 588,
-      creatorImg: "src/assets/people_15996950.png",
+      creatorImg: peopleImg,
       timeLeft: null,
     },
     {
       id: 4,
       title: "Hot Lava",
-      image: "src/assets/lava-9924745_1280.jpg",
+      image: lavaImg,
       eth: "0.07",
       edition: "/",
       likes: 700,
-      creatorImg: "src/assets/tax-inspector.png",
+      creatorImg: taxInspectorImg,
       timeLeft: null,
     },
   ];

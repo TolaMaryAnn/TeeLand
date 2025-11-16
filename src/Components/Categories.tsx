@@ -1,11 +1,17 @@
+import metamaskIcon from "../assets/icons8-metamask-48.png";
+import bitskiIcon from "../assets/optimization_2501760.png";
+import walletConnectIcon from "../assets/digital-wallet_5802605.png";
+import coinbaseIcon from "../assets/database_15163896.png";
+import arkaneIcon from "../assets/ar_16861670.png";
+
 function Categories() {
   return (
     <div className="bg-[#0f0f14]">
-      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
-        <div className="shadow-md mt-20 ml-4 rounded-2xl bg-[#2a2a33] border  overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
+        <div className="shadow-md mt-20 ml-4 rounded-2xl bg-[#2a2a33] border overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
           <img
-            src="src/assets/icons8-metamask-48.png"
-            alt="Card 1"
+            src={metamaskIcon}
+            alt="Metamask"
             className="w-20 h-20 object-contain"
           />
           <h3 className="text-base mt-6 font-semibold text-white text-center">
@@ -13,10 +19,10 @@ function Categories() {
           </h3>
         </div>
 
-        <div className="bg-[#2a2a33] md:mt-20 border   shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
+        <div className="bg-[#2a2a33] md:mt-20 border shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
           <img
-            src="src/assets/optimization_2501760.png"
-            alt="Card 2"
+            src={bitskiIcon}
+            alt="Bitski"
             className="w-20 h-20 object-contain"
           />
           <h3 className="text-lg mt-6 font-semibold text-white text-center">
@@ -24,21 +30,21 @@ function Categories() {
           </h3>
         </div>
 
-        <div className="bg-[#2a2a33] border md:mt-20  shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
+        <div className="bg-[#2a2a33] border md:mt-20 shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
           <img
-            src="src/assets/digital-wallet_5802605.png"
-            alt="Card 3"
+            src={walletConnectIcon}
+            alt="Wallet Connect"
             className="w-20 h-20 object-contain"
           />
-          <h3 className="text-base mt-6 font-semibold  text-white text-center">
+          <h3 className="text-base mt-6 font-semibold text-white text-center">
             Wallet Connect
           </h3>
         </div>
 
-        <div className="bg-[#2a2a33] border md:mt-20  shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
+        <div className="bg-[#2a2a33] border md:mt-20 shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
           <img
-            src="src/assets/database_15163896.png"
-            alt="Card 4"
+            src={coinbaseIcon}
+            alt="Coinbase Wallet"
             className="w-20 h-20 object-contain"
           />
           <h3 className="text-base mt-6 font-semibold text-white text-center">
@@ -46,10 +52,10 @@ function Categories() {
           </h3>
         </div>
 
-        <div className="bg-[#2a2a33] border mr-4 md:mt-20  shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
+        <div className="bg-[#2a2a33] border mr-4 md:mt-20 shadow-md rounded-2xl overflow-hidden hover:scale-105 transition-transform duration-300 p-6 flex flex-col items-center">
           <img
-            src="src/assets/ar_16861670.png"
-            alt="Card 5"
+            src={arkaneIcon}
+            alt="Arkane"
             className="w-20 h-20 object-contain"
           />
           <h3 className="text-base mt-6 font-semibold text-white text-center">

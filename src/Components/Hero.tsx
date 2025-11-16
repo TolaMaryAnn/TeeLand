@@ -1,3 +1,5 @@
+import vrImage from "../assets/vr-6770800_1280.png";
+
 function Hero() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between mt-8 text-white overflow-hidden">
@@ -52,8 +54,8 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-800/20 to-transparent blur-3xl rounded-full"></div>
 
         <img
-          src="src/assets/vr-6770800_1280.png"
-          alt="NFT Artwork"
+          src={vrImage}
+          alt="VR Image"
           className="w-10/12 h-auto animate-float drop-shadow-[0_0_30px_rgba(59,130,246,0.5)]"
         />
       </div>
