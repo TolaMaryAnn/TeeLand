@@ -57,14 +57,14 @@ function NewItems() {
   ];
 
   return (
-    <div className="bg-[#0f0f14] text-white px-6 py-12">
-      <h2 className="text-2xl font-bold mb-8">New Items</h2>
+    <div className="py-16 relative z-10 px-6 max-w-7xl mx-auto">
+      <h2 className="text-4xl font-extrabold mb-12 text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">New Items</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {items.map((item) => (
           <div
             key={item.id}
-            className="bg-[#1a1a21] rounded-2xl p-4 hover:scale-105 transition-transform duration-300 relative"
+            className="glass-card rounded-3xl p-5 hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(147,51,234,0.3)] transition-all duration-300 relative group overflow-hidden"
           >
             <div className="absolute top-4 left-4 flex items-center space-x-1">
               <img
@@ -76,28 +76,28 @@ function NewItems() {
             </div>
 
             {item.timeLeft && (
-              <div className="absolute top-4 right-4 bg-[#2a2a33] px-2 py-1 rounded-full text-xs">
+              <div className="absolute top-4 right-4 bg-blue-600/20 backdrop-blur-md text-blue-200 border border-blue-500/30 px-3 py-1 rounded-full text-xs font-semibold shadow-lg z-10">
                 {item.timeLeft}
               </div>
             )}
 
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-12 overflow-hidden rounded-xl">
               <img
                 src={item.image}
                 alt={item.title}
-                className="rounded-xl w-52 h-52 object-cover"
+                className="rounded-xl w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500"
               />
             </div>
 
-            <div className="mt-4 text-center">
-              <h3 className="text-lg font-semibold">{item.title}</h3>
-              <div className="flex justify-center space-x-2 text-sm text-gray-400 mt-1">
-                <span>{item.eth} ETH</span>
+            <div className="mt-5 text-center">
+              <h3 className="text-xl font-bold text-white/90">{item.title}</h3>
+              <div className="flex justify-center space-x-3 text-sm text-gray-400 mt-2 font-medium">
+                <span className="text-blue-400">{item.eth} ETH</span>
                 <span>{item.edition}</span>
               </div>
               <a
                 href="#"
-                className="text-sm text-blue-800 hover:underline mt-1 inline-block"
+                className="text-sm font-semibold text-purple-400 hover:text-purple-300 hover:underline mt-3 inline-block transition-colors"
               >
                 Place a bid
               </a>

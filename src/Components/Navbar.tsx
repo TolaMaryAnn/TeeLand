@@ -7,10 +7,10 @@ function Navbar() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="w-full  backdrop-blur-md text-white py-6 px-2 md:px-12  border-gray-800 shadow-lg">
+    <nav className="w-full glass-panel border-b-0 sticky top-0 z-50 text-white py-4 px-4 md:px-12 transition-all duration-300">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-6 w-full md:w-1/2">
-          <div className="md:text-4xl text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-300 via-gray-100 to-blue-700 animate-pulse drop-shadow-sm">
+          <div className="md:text-4xl text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-blue-400 text-glow cursor-pointer tracking-tight">
             Teeland
           </div>
 
@@ -18,9 +18,9 @@ function Navbar() {
             <input
               type="text"
               placeholder="Search items, collections, and creators..."
-              className="w-96 pl-12 pr-4 py-2.5 rounded-full bg-[#1a1a21]/70 border border-gray-700 
-               text-gray-200 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 
-               focus:border-blue-500 outline-none backdrop-blur-sm transition-all duration-300"
+              className="w-96 pl-12 pr-4 py-2.5 rounded-full bg-white/5 border border-white/10 
+               text-gray-200 placeholder-gray-400 focus:ring-2 focus:ring-blue-500/50 
+               focus:border-blue-500/50 outline-none backdrop-blur-md transition-all duration-300 hover:bg-white/10"
             />
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ function Navbar() {
             </div>
           ))}
 
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-700 hover:to-blue-700 text-white px-5 py-2 rounded-full transition duration-300 shadow-md hover:shadow-blue-500/30">
+          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 py-2.5 rounded-full transition-all duration-300 shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.5)] font-semibold text-sm">
             Connect Wallet
           </button>
         </div>
@@ -63,17 +63,17 @@ function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="mt-4 flex flex-col space-y-4 md:hidden">
+        <div className="absolute top-[70px] left-0 w-full glass-panel border-t border-white/10 z-50 flex flex-col space-y-4 md:hidden px-6 py-6 shadow-2xl">
           {["Home", "Explore", "Pages", "Activity"].map((item) => (
             <div
               key={item}
-              className="flex items-center justify-between border-b border-gray-600 pb-2"
+              className="flex items-center justify-between border-b border-white/10 pb-3 hover:text-blue-400 transition-colors cursor-pointer"
             >
-              <span>{item}</span>
-              <FaChevronDown size={12} />
+              <span className="font-medium">{item}</span>
+              <FaChevronDown size={12} className="opacity-70" />
             </div>
           ))}
-          <button className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-2 rounded-full transition duration-300 shadow-md hover:shadow-blue-500/30">
+          <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-5 py-3 rounded-xl font-semibold transition duration-300 shadow-[0_0_15px_rgba(59,130,246,0.3)]">
             Connect Wallet
           </button>
         </div>
